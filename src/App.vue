@@ -8,7 +8,6 @@
         <li>新規登録</li>
       </ul>
     </header>
-    {{checkbox()}}
     <p v-if='count == 0'>
       ステップ１
       <font-awesome-icon icon='id-card'></font-awesome-icon>
@@ -87,9 +86,6 @@ export default {
     goBack: function(value){
       this.count -= value;
     },
-     checkbox: function(){
-      
-     },
   }
 };
 </script>
