@@ -31,7 +31,6 @@ import Step3 from './components/Step3';
 export default {
   name: 'app1',
   components: {Step1, Step2, Step3},
-
   data() {
     return {
       count:0,
