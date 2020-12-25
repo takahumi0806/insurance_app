@@ -1,5 +1,5 @@
 <template>
-  <div id='app1'>
+  <div id='app'>
     <header id='top'>
       <h2>sample App</h2>
       <ul id='top_right'>
@@ -8,42 +8,27 @@
         <li>新規登録</li>
       </ul>
     </header>
-    <p v-if='count == 0'>
-      <Step1 />
-      <button v-on:click='goNext(1)'>次へ進む</button>
-    </p>
-    <p v-else-if='count == 1'>
-      <Step2 />
-      <button v-on:click='goBack(1)'>前へ戻る</button>
-      <button v-on:click='goNext(1)'>次へ進む</button>
-    </p>
-    <p v-else>
-      <Step3 />
-      <button v-on:click='goBack(1)'>前へ戻る</button>
-      <button>次へ進む</button>
-    </p>
+    <div>
+      <router-view/>
+    </div>
   </div>
 </template>
 <script>
-import Step1 from './components/Step1';
-import Step2 from './components/Step2';   
-import Step3 from './components/Step3';   
-export default {
-  name: 'app1',
-  components: {Step1, Step2, Step3},
-  data() {
-    return {
-      count:0,
-    };
-  },
-  methods: {
-    goNext(value){
-      this.count += value;
+  export default {
+    name: 'app1',
+    data() {
+      return {
+        count:0,
+      };
     },
-    goBack(value){
-      this.count -= value;
-    },
-  }
+    methods: {
+      goNext(value){
+        this.count += value;
+      },
+      goBack(value){
+        this.count -= value;
+      },
+    }
 };
 </script>
 <style>
@@ -54,11 +39,16 @@ ul {
 li{
     display:inline;
 }
-p{
+.main{
   width:800px;
   height:400px;
   margin: 100px auto;
   text-align: center;
+  border: solid;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 #top{
   display: flex;
@@ -66,9 +56,4 @@ p{
 #top_right{
   margin-left: auto;
 }
-p{
-  border: solid;
-}
 </style>
-
-

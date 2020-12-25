@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class='main'>
     <ul>
       ステップ２
       <font-awesome-icon icon='chalkboard-teacher'></font-awesome-icon>
@@ -18,6 +18,8 @@
       <li><input type='radio' value='はい' v-model='isSick' v-bind:is-sick='true'>はい</li>
       <li><input type='radio' value='いいえ' v-model='isSick' v-bind:is-sick='true'>いいえ</li><br>
     </ul>
+    <button><router-link to='/'>前へ戻る</router-link></button>
+    <button><router-link to='/step3'>次へ進む</router-link></button>
   </div>
 </template>
 <script>
