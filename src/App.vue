@@ -21,39 +21,32 @@
         count:0,
       };
     },
-    methods: {
-      goNext(value){
-        this.count += value;
-      },
-      goBack(value){
-        this.count -= value;
-      },
-    }
-};
+  };
 </script>
 <style>
-ul {
-  list-style: none;
-  padding-left: 0px;
-}
-li{
-    display:inline;
-}
-.main{
-  width:800px;
-  height:400px;
-  margin: 100px auto;
-  text-align: center;
-  border: solid;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-#top{
-  display: flex;
-}
-#top_right{
-  margin-left: auto;
-}
+  ul {
+    list-style: none;
+    padding-left: 0px;
+  }
+  li{
+      display:inline;
+  }
+  .main{
+    width:800px;
+    height:400px;
+    margin: 100px auto;
+    text-align: center;
+    border: solid;
+  }
+  a {
+    display:block;
+    text-decoration: none;
+    color: black;
+  }
+  #top{
+    display: flex;
+  }
+  #top_right{
+    margin-left: auto;
+  }
 </style>
