@@ -1,5 +1,5 @@
 <template>
-  <div class='main'>
+  <div class="main">
     ステップ1
     <font-awesome-icon icon='id-card'></font-awesome-icon>お客様の情報を入力して下さい<br>
     -性別-<br>
