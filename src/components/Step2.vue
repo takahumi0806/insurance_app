@@ -9,7 +9,7 @@
       <li><input type='radio' value='いいえ' v-model='isJoin' v-bind:is-join='true'>いいえ</li><br>
     </ul>
     <ul v-if='isJoin'>
-      現在入院中ですか？または、または、最近３ヶ月内に医師の診察・検査の結果<br>入院・手術を勧められた事はありますか<br>
+      現在入院中ですか？または、または、最近３ヶ月内に医師の診察・検査の結果<br>入院・手術を勧められた事はありますか?<br>
       <li><input type='radio' value='はい' v-model='isSurgery' v-bind:is-surgery='true'>はい</li>
       <li><input type='radio' value='いいえ' v-model='isSurgery' v-bind:is-surgery='true'>いいえ</li><br>
     </ul>
