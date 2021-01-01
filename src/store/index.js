@@ -14,7 +14,6 @@ const store = new Vuex.Store({
     sick: ''
   },
   getters: {
-    // messageを使用するゲッター
     gender(state) {
       return state.gender
     },
@@ -41,7 +40,6 @@ const store = new Vuex.Store({
     },
   },
   mutations: {
-    // メッセージを変更するミューテーション
     setMessage(state, payload) {
       state.message = payload.message
     },
