@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../components/Step1.vue'
 import Step2 from "../components/Step2.vue"
 import Step3 from "../components/Step3.vue"
+import Step4 from "../components/Step4.vue"
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,10 @@ const routes = [
     path: '/step3',
     name: 'Step3',
     component: Step3
+  },
+  {
+    path: '/Step4',
+    component: Step4
   },
   {
     path: '/about',
