@@ -31,7 +31,6 @@
 
 <script>
   export default {
-  name: 'header-sample',
   methods: {
     doGender(event) {
       this.$store.dispatch('doGender', event.target.value)
