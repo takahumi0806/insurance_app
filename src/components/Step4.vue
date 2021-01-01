@@ -12,6 +12,8 @@
       <div>{{sick}}</div>
     <p>-ご相談内容-</p>
       <div>{{message}}</div>
+    <button ><router-link to='/step3'>前へ戻る</router-link></button>
+    <button>送信</button>
   </div>
 </template>
 
