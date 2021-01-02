@@ -4,8 +4,8 @@
     <font-awesome-icon icon='id-card'></font-awesome-icon>お客様の情報を入力して下さい<br>
     -性別-<br>
     <ul>
-      <li><input name='gender' type='radio' value='男性' v-on:click="doGender">男性</li>
-      <li><input name='gender' type='radio' value='女性' v-on:click="doGender">女性</li>
+      <li><input name='gender' type='radio' value='男性' v-on:click='doGender'>男性</li>
+      <li><input name='gender' type='radio' value='女性' v-on:click='doGender'>女性</li>
     </ul>
     -生年月日-<br>
     <select v-on:change='doYear'>
