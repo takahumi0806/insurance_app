@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../components/Step1.vue'
-import Step2 from "../components/Step2.vue"
-import Step3 from "../components/Step3.vue"
-import Step4 from "../components/Step4.vue"
+import Step2 from '../components/Step2.vue'
+import Step3 from '../components/Step3.vue'
+import Step4 from '../components/Step4.vue'
 
 Vue.use(VueRouter)
 
