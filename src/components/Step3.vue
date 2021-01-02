@@ -20,7 +20,6 @@ export default {
   },
   methods: {
     doUpdate(event) {
-      // input の値を持ってディスパッチ
       this.$store.dispatch('doUpdate', event.target.value)
     },
   }
