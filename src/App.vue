@@ -15,12 +15,6 @@
 </template>
 <script>
   export default {
-    name: 'app1',
-    data() {
-      return {
-        count:0,
-      };
-    },
   };
 </script>
 <style>
